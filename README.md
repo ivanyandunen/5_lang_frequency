@@ -10,23 +10,28 @@
 и файла с текстом в формате txt с кодировкой cp1251. 
 
 Запуск на Windows:
+В качестве примера в input_file.txt скопирован текст задания 
+со [страницы](https://devman.org/challenges/5/)
+
 
 ```cmd
 
  C:\5_lang_frequency>python lang_frequency.py <path_to_file>
 
- Пример:
+Пример:
+
  C:\5_lang_frequency>python lang_frequency.py input_file.txt
- the 7
- to 6
- be 4
- with 3
- of 3
- keys 3
- dictionary 3
- can 3
- are 3
- and 3
+ и 5
+ в 4
+ на 3
+ такой 2
+ скрипт 2
+ с 2
+ не 2
+ можно 2
+ должен 2
+ вход 2
+
 
 ```
 
