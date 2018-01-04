@@ -1,4 +1,4 @@
-# Frequency Analysis of Words
+# Поиск самых популярных слов
 
 Скрипт принимает на вход путь до текстового файла и выводить в консоль десять самых
 популярных слов в этом файле в порядке убывания частоты.
@@ -36,6 +36,6 @@
 ```
 
 
-# Project Goals
+# Цели проекта
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Код создан в учебных целях. В рамках учебного курса по веб-разработке - [DEVMAN.org](https://devman.org)

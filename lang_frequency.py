@@ -33,7 +33,7 @@ def get_most_frequent_words(file_content):
 
 def print_most_frequent_words(words_frequency):
     for word, frequency in words_frequency[:10]:
-            print(word, frequency)
+        print(word, frequency)
 
 
 if __name__ == '__main__':
