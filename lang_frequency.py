@@ -1,19 +1,33 @@
 import sys
+import string
+
 
 def load_data(filepath):
     words_count = {}
     with open(filepath) as input_file:
         for line in input_file:
-            for word in line.split():
-                words_count[word] = words_count.get(word, 0) + 1
+            for word in line.translate(
+                    ''.maketrans(
+                        '',
+                        '',
+                        string.punctuation
+                    )
+            ).split():
+                words_count[word.lower()] = words_count.get(word, 0) + 1
     return words_count
 
 
 def get_most_frequent_words(file_content):
-    words_frequency = [(frequency, word) for word, frequency in file_content.items()]
+    words_frequency = [
+        (frequency, word)
+        for word, frequency in file_content.items()
+    ]
     words_frequency.sort()
     words_frequency.reverse()
-    words_frequency = [(word, frequency) for frequency, word in words_frequency]
+    words_frequency = [
+        (word, frequency)
+        for frequency, word in words_frequency
+    ]
     return words_frequency
 
 
