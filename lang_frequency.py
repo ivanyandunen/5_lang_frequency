@@ -11,8 +11,10 @@ def load_data(filepath):
 def get_most_frequent_words(file_content):
     words_list = re.findall(r'\w+', file_content.lower())
     number_of_most_popular_words = 10
-    most_frequent_words = collections.Counter(words_list)\
+    most_frequent_words = (
+        collections.Counter(words_list)
         .most_common(number_of_most_popular_words)
+    )
     return most_frequent_words
 
 
